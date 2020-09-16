@@ -16,6 +16,7 @@ class LinkPlugin(CMSPluginBase):
     allow_children = True
 
     fieldsets = [
+        (None, {'fields': ('auth_only',)}),
         (None, {
             'fields': (
                 'name',
